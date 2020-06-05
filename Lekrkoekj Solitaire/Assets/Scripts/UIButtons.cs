@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIButtons : MonoBehaviour
 {
@@ -16,6 +17,10 @@ public class UIButtons : MonoBehaviour
     void Update()
     {
         
+    }
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void PlayAgain()
