@@ -21,6 +21,7 @@ public class ChooseDifficulty : MonoBehaviour
 
     public void SelectEasy()
     {
+        Solitaire.drawMode = 1;
         Time.timeScale = 1;
         difficultyPanel.SetActive(false);
         SceneManager.LoadScene("SolitaireGame");
