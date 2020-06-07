@@ -33,6 +33,7 @@ public class Solitaire : MonoBehaviour
     private int trips;
     private int tripsRemainder;
 
+    public static int drawMode;
 
 
     // Start is called before the first frame update
@@ -149,20 +150,20 @@ public class Solitaire : MonoBehaviour
 
     public void SortDeckIntoTrips()
     {
-        trips = deck.Count / 3;
-        tripsRemainder = deck.Count % 3;
+        trips = deck.Count / drawMode;
+        tripsRemainder = deck.Count % drawMode;
         deckTrips.Clear();
 
         int modifier = 0;
         for (int i = 0; i < trips; i++)
         {
             List<string> myTrips = new List<string>();
-            for (int j = 0; j < 3; j++)
+            for (int j = 0; j < drawMode; j++)
             {
                 myTrips.Add(deck[j + modifier]);
             }
             deckTrips.Add(myTrips);
-            modifier = modifier + 3;
+            modifier = modifier + drawMode;
         }
         if (tripsRemainder != 0)
         {

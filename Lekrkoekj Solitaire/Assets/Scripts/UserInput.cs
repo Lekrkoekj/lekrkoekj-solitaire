@@ -78,7 +78,7 @@ public class UserInput : MonoBehaviour
     void Deck()
     {
         // deck click actions
-        print("Clicked on deck");
+        // print("Clicked on deck");
         solitaire.DealFromDeck();
         slot1 = this.gameObject;
 
@@ -86,7 +86,7 @@ public class UserInput : MonoBehaviour
     void Card(GameObject selected)
     {
         // card click actions
-        print("Clicked on Card");
+        // print("Clicked on Card");
 
         if (!selected.GetComponent<Selectable>().faceUp) // if the card clicked on is facedown
         {
@@ -160,7 +160,7 @@ public class UserInput : MonoBehaviour
     void Top(GameObject selected)
     {
         // top click actions
-        print("Clicked on Top");
+        // print("Clicked on Top");
         if (slot1.CompareTag("Card"))
         {
             // if the card is an ace and the empty slot is top then stack
@@ -176,7 +176,7 @@ public class UserInput : MonoBehaviour
     void Bottom(GameObject selected)
     {
         // bottom click actions
-        print("Clicked on Bottom");
+        // print("Clicked on Bottom");
         // if the card is a king and the empty slot is bottom then stack
 
         if (slot1.CompareTag("Card"))
