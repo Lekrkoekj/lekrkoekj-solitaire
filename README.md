@@ -7,4 +7,4 @@ http://www.megalomobile.com/lets-make-solitaire-in-unity-part-1-set-up-and-shuff
 
 [View all releases](https://github.com/Lekrkoekj/lekrkoekj-solitaire/releases "Releases")
 
-[Play the newest version in your browser on LKG](https://github.com/Lekrkoekj/lekrkoekj-solitaire/releases "Releases")
+[Play the newest version in your browser on LKG](https://lekrkoekj.ml/lks "Releases")
