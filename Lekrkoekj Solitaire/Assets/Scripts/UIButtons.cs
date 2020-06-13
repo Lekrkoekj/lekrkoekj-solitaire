@@ -37,22 +37,8 @@ public class UIButtons : MonoBehaviour
     {
         highScorePanel.SetActive(false);
         Solitaire.drawMode = 0;
-        ResetScene();
+        SceneManager.LoadScene("SolitaireGame");
     }
-
-    public void ResetScene()
-    {
-        // find all the cards and remove them
-        UpdateSprite[] cards = FindObjectsOfType<UpdateSprite>();
-        foreach (UpdateSprite card in cards)
-        {
-            Destroy(card.gameObject);
-        }
-        ClearTopValues();
-        // deal new cards
-        FindObjectOfType<Solitaire>().PlayCards();
-    }
-
     void ClearTopValues()
     {
         Selectable[] selectables = FindObjectsOfType<Selectable>();
