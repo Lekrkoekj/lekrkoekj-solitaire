@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SolitaireGame.unity
     guid: 7aee90f4bfc1e894d9eb9e82416162d0
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 92f1dcca0eb0f56469059bd81eee34a5
   m_configObjects: {}
